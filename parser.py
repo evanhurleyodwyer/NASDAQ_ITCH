@@ -288,7 +288,7 @@ while msg_header and datetime.now() < datetime(2023, 2, 24, 22, 21, 30):
         message = broken_trade(message)
         writer.writerow(message)
 
-    elif msg_header == 'i'.encode('ASCII'):
+    elif msg_header == 'I'.encode('ASCII'):
         message = bin_data.read(49)
         message = noii(message)
         writer.writerow(message)
